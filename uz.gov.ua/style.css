@@ -1,0 +1,562 @@
+body
+{
+    margin: 0;
+    padding: 40px 0 0 0;
+    background-image: url("images/main_background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, "sans-serif";
+}
+a, a:hover, a:visited{
+    text-decoration: none;
+}
+
+.menu_button_call{
+    display: none;
+    position: absolute;
+    background-image: url("images/old-train.svg");
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+}
+/*navigation menu top row*/
+.container
+{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.nav_content{
+    width: 90%;
+}
+.btn{
+    padding: 0 10px;
+    height: 15px;
+    border-radius: 3px;
+    border: 1px solid #c3c3c3;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+.ua, .eng:hover{
+    color: #ffffff;
+    background-color: rgb(187,187,187);
+}
+.eng{
+    color: rgb(187,187,187);
+    background-color: #ffffff;
+}
+.blind_button
+{
+    margin: 0 200px 0 100px;
+    border: 3px solid transparent;
+    padding: 5px;
+}
+.blind_button:hover{border: 3px solid black}
+.btn_map{
+    padding: 0 8px 0 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: #959595;
+    text-decoration: none;
+    margin: 0 10px 0 0;
+}
+.btn_map:hover{text-decoration: underline}
+.search_field{
+    width: 176px;
+    height: 15px;
+    font-size: 10px;
+    line-height: 14px;
+    color: #959595;
+    margin: 0 5px 0 0;
+    padding: 0 5px;
+    vertical-align: middle;
+}
+.search_button{
+    height: 15px;
+    padding: 0 2px;
+    background: #ffffff;
+    border: 1px solid #dadbda;
+    border-radius: 4px;
+    font-size: 10px;
+    line-height: 14px;
+    color: #959595;
+    cursor: pointer;
+}
+.search_button:hover{
+    border-color: #959595;
+}
+
+/*navigation menu bottom row*/
+#menu{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    cursor: pointer;
+    color: rgb(138,138,138);
+    font-weight: bold;
+}
+#menu li {
+    display: block;
+    position: relative;
+    float: left;
+    font-size: 0.8em;
+    color: rgb(138,138,138);
+    padding: 0 10px;
+    transition: all 0.2s linear;
+    border: 1px solid transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: none;
+}
+#menu li a {
+    text-decoration: none;
+    transition: all 0.2s linear;
+    color: rgb(138,138,138);
+}
+#menu li:hover{
+    border: 1px solid #959595;
+    border-bottom: none;
+}
+
+
+/*dropdown*/
+#menu ul {
+    padding-left: 0;
+    position: absolute;
+    top: 18px;
+    display: none;
+    list-style: none;
+    border: 1px solid #959595;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 1.5em;
+    background-color: rgba(255,255,255,0.9);
+}
+#menu ul li a {
+    transition: all 0.2s linear;
+    display: block;
+}
+#menu ul li {
+    transition: all 0.2s linear;
+    border:none;
+    border-radius: 0px;
+    margin-bottom: 5px;
+    width: calc(100% - 5px);
+    white-space: pre;
+}
+#menu ul li a:hover {
+    background-color: rgb(209,227,245);
+}
+#menu ul li:hover {
+    border: none;
+    border-radius: 0;
+}
+
+/*Logo*/
+.logo
+{
+    background-image: url("images/logo.png");
+    position: absolute;
+    width: 169px;
+    height: 66px;
+    z-index: 0;
+    top:-5px;
+    right: 10px;
+}
+
+header {
+   border-bottom: 3px solid #959595;
+    height: 65px;
+
+}
+
+/*section content*/
+section{
+    margin-top: 15px;
+    width: 78%;
+    float: left;
+    margin-right: 2%;
+}
+.slider{
+    max-width: 780px;
+    width:100%;
+    max-height: 390px;
+    height: 100%;
+    position: relative;
+    z-index: -1000;
+}
+.slider img{
+    width:100%;
+    height: 100%;
+}
+.slidre_control_container{
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 75px;
+    background-color: rgba(255,255,255,0.6);
+}
+.slidre_control_container div div{
+    background-color: #ffffff;
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-left: 5px;
+}
+
+.slidre_control_container>div{
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+
+}
+/*slider title hover - not relized. NOT WORK WITH POSITION ABSOLUTE????*/
+#slider_title
+{
+    font-size: 2em;
+    color: #ffffff;
+    position: absolute;
+    top: 80.7%;
+    left: 10px;
+    text-shadow: 5px 0px 5px #000000;
+}
+
+
+/*news block*/
+.news_block{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: "Magistralcb",Arial,Helvetica,"sans-serif";
+    display: block;
+}
+.single_new_container{
+    margin-bottom: 25px;
+    clear: both;
+}
+.news_block>a{
+    margin-left: 10px;
+    color: rgb(96,151,183);
+    font-size: 2em;
+    font-weight: bold;
+}
+.news_info>span{
+    color: rgb(96,151,183);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.news_info>a{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #000;
+}
+.news_info>a:hover{
+    text-decoration: underline;
+}
+.news_info>p{
+    font-size: 0.8em;
+}
+.news_image{
+    margin-right: 10px;
+   float: left;
+    height: 150px;
+}
+.news_info{
+    width: 87%;
+    margin-left: 100px;
+}
+
+
+/*ad section footer banner*/
+.ad_banners{
+    width: 100%;
+}
+.ad_banners div{
+    width: 100%;
+    height: 88px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.first_baner
+{
+    background-image: url("images/first_baner.jpeg");
+}
+.second_baner{
+    background-image: url("images/banner 750x88.png");
+}
+
+
+/*info right article*/
+.info_section{
+    width: 20%;
+    float:left;
+    margin-top:5px;"
+}
+
+
+/*ticket counter*/
+.ticker_sell{
+    width: calc(100% - 2px);
+    border: 1px solid rgb(217,218,218);
+    height: 175px;
+    padding-top: 15px;
+    background: linear-gradient(to top,rgb(238,238,238),rgb(253,253,253));
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.first_text{
+    font-size: 1.1em;
+    color: rgb(138,138,138);
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.second_text{
+    color: #6ba1bf;
+    font-size: 0.8em;
+}
+.third_text{
+    font-size: 0.6em;
+}
+.fourth_text{
+    font-size: 1.4em;
+    color: rgb(255,0,0);
+}
+.fiveth_text{
+    color: #6BA1BF;
+}
+
+/*Online buy*/
+.ticker_online_buy{
+    padding-top: 20px;
+    width: 100%;
+    height: 245px;
+    background-color: rgb(105,157,188);
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.ticker_online_buy h2{
+    text-align: center;
+    font-size: 1.1em;
+}
+.ticker_online_buy label{
+    margin-left: 10px;
+    font-size: 0.9em;
+    margin-bottom: 3px;
+}
+.online_buy_input{
+    width: 80%;
+    margin-left: 10px;
+}
+.online_buy_button{
+    width: 75%;
+    margin-left: 10px;
+    margin-top: 10px;
+    border:  1px solid #959595;
+    background-color: rgb(240,240,240);
+}
+
+
+/*recall*/
+.recall_form{
+    width: calc(100% - 2px);
+    height: 398px;
+    padding-top: 10px;
+    border: 1px solid #959595;
+    background-color: rgb(239,239,239);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.recall_title{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #6BA1BF;
+    margin-top: 10px;
+}
+.recall_select_type{
+    width: 90%;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+.recall_input{
+    width: 80%;
+    height: 20px;
+    margin: 5px 0 5px 0;
+}
+#recall_textarea{
+    height: 40px;
+}
+.recall_task{
+    font-size: 1em;
+}
+.recall_task_anser{
+    width: 35px;
+    height: 15px;
+}
+.recall_send_button {
+    width: 80%;
+}
+.recall_span{
+    font-size: 0.8em;
+}
+
+.recall_status{
+    font-weight: bold;
+}
+
+/*video about*/
+.video_about{
+    width: calc(100% - 12px);
+    border: 1px solid #959595;
+    background-color: rgb(235,235,235);
+    height: 155px;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.video_about_play_button div{
+    width: 95%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("images/442467-4.jpg");
+}
+
+/*div download file about*/
+.file_about_NAZK{
+    width: calc(100% - 2px);
+    height: 100px;
+    padding-top: 40px;
+    border: 1px solid #959595;
+    text-align: center;
+    background-color: rgb(239,239,239);
+    margin-bottom: 10px;
+}
+.file_about_NAZK a{
+    text-decoration: none;
+    color: #6BA1BF;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*travel with auto*/
+.travel_with_auto {
+    width: calc(100% - 2px);
+    height: 134px;
+    padding-top: 5px;
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #959595;
+    font-size: 0.9em;
+}
+.travel_with_auto a{
+    color: rgb(138,138,138);
+}
+.travel_with_auto div{
+    height: 100px;
+    width:160px;
+    background-image: url("images/avto_train2.png");
+    background-repeat: no-repeat;
+    margin-left: calc(50% - 80px);
+}
+
+/*footer*/
+footer{
+    width: 100%;
+}
+.footer_banners div{
+    width: 170px;
+    height: 230px;
+    float: left;
+    background-repeat: no-repeat;
+}
+.footer_banner_one{
+    background-image: url("images/414263.jpg");
+    margin-right: 28px;
+}
+.footer_banner_two{
+    background-image: url("images/414273.jpg");
+    margin-right: 28px;
+}
+.footer_banner_tree{
+    text-align: center;
+    background-color: rgb(239,239,239);
+    margin-right: 40px;
+}
+.footer_banner_tree img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.footer_banner_tree span{
+    color: #000;
+    font-weight: bold;
+}
+
+.footer_banner_four div{
+    width: 190px;
+    height: 110px;
+}
+.footer_banner_four_first{
+    background-image: url("images/electro2.png");
+    clear: both;
+    background-size: cover;
+}
+.footer_banner_four_second{
+    background-image: url("images/koshty2.png");
+    margin-top: 15px;
+    clear: both;
+    background-size: cover;
+}
+
+
+/*footer links*/
+.links_other
+{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.links_other>div{
+    float: left;
+}
+.links_other img{
+    width: 25px;
+    height: 25px;
+}
+.link_similar
+{
+    font-size: 0.7em;
+    margin-left:40px;
+}
+.link_similar a:hover{
+    text-decoration: underline;
+}
+.link_similar a{
+    text-decoration: none;
+    color: #000;
+}
+.link_similar div{
+    float: left;
+}
+.you_tube_link{
+    margin-left: 60px;
+}
+.twitter_link{
+    margin-left: 90px;
+}
+.blinded_link{
+    margin-left: 90px;
+}
+.copyright{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 0.8em;
+    color: #000;
+    background-color:rgb(235, 235, 235);
+}

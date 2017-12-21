@@ -1,0 +1,432 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.blind_button{
+		margin: 0 150px 0 100px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.blind_button{
+		margin: 0 100px 0 100px;
+	}
+
+	#menu li{
+		padding: 0 5px;
+		font-size: 0.7em;
+	}
+	.footer_banners{
+		padding-left: 10%;
+	}
+	.footer_banner_four {
+		width: 100% !important;
+		padding-left: 50px;
+	}
+	.footer_banner_four a{
+		display: inline-block;
+	}
+	.footer_banner_four_first{
+		margin-top: 15px;
+		margin-right: 100px;
+	}
+	.copyright
+	{
+		display: block;
+		clear: both;
+		margin-left: calc(33%);
+	}
+	#slider_title{
+		font-size: 1.6em;
+		top: 80%;
+	}
+	.slidre_control_container div div{
+		width: 10px;
+		height: 10px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.blind_button
+	{
+		margin: 0 30px 0 30px;
+	}
+	#menu li{
+		padding: 0 3px;
+		font-size: 0.69em;
+	}
+	.footer_banners{
+		padding-left: 5%;
+	}
+	.footer_banner_four {
+		width: 100% !important;
+		padding-left: 50px;
+	}
+	.footer_banner_four a{
+		display: inline-block;
+	}
+	.footer_banner_four_first{
+		margin-top: 15px;
+		margin-right: 100px;
+	}
+	.copyright
+	{
+		display: block;
+		clear: both;
+		margin-left: calc(33%);
+	}
+
+	.you_tube_link{
+		margin-left: 30px;
+	}
+	.twitter_link{
+		margin-left: 45px;
+	}
+	.blinded_link{
+		margin-left: 45px;
+	}
+	.first_text{
+		font-size: 0.9em;
+	}
+	#slider_title{
+		font-size: 1.6em;
+		top: 80%;
+	}
+	.slidre_control_container div div{
+		width: 10px;
+		height: 10px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	body{
+		padding-top: 70px;
+	}
+	header{
+		width: 18%;
+		float: left;
+		border-bottom: none;
+		padding-left: 5px;
+	}
+	.nav_content{
+		width: 100%;
+		clear: both;
+	}
+
+	.logo{
+		right: calc(50% - 84.5px);
+		top: -60px;
+
+	}
+	.btn{
+		padding: 8px 15px;
+		font-weight: bold;
+	}
+	.ua, .eng:hover{
+		background-color: rgb(150, 150, 150);
+	}
+
+	.blind_button{
+		display: none;
+	}
+	.btn_map{
+		font-size: 1em;
+		display: block;
+		margin-top:20px;
+		margin-bottom: 20px;
+		color: rgb(0, 0, 0);
+	}
+	.search_field{
+		width: 80%;
+		height: 30px;
+		font-size: 20px;
+	}
+	.search_button{
+		margin-top: 10px;
+		width: 80%;
+		height: 20px;
+		font-size: 15px;
+		margin-left: 5px;
+		margin-bottom: 20px;
+	}
+	#menu li{
+		font-size: 1.0em;
+		margin-bottom: 20px;
+		border-bottom: 3px solid #959595;
+		padding-bottom: 5px;
+	}
+	#menu li:hover{
+		border-bottom: 1px solid #959595;
+	}
+	/*fade menu*/
+	#menu ul{
+		top:0;
+		border-top: 1px solid #959595;
+		left: 150px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+	#menu ul li {
+		white-space: inherit;
+		width: 600px;
+		border-bottom: 1px solid #959595;
+	}
+	.slider{
+		margin-left: 10px;
+	}
+	.info_section{
+		width: 100%;
+		margin-left: 50px;
+		clear: both;
+		position: relative;
+	}
+	.ticker_sell{
+		width: 20%;
+		float: left;
+	}
+	.ticker_online_buy, .recall_form, .video_about{
+		width: 20%;
+		float: left;
+		margin-left: 20px;
+	}
+	.recall_send_button{
+		border:1px solid #959595;
+		margin-top: 3px;
+	}
+	.file_about_NAZK{
+		width: 20%;
+		clear: both;
+		position: absolute;
+		top:220px;
+	}
+	.file_about_NAZK a{
+		font-size: 1.1em;
+	}
+
+	.travel_with_auto{
+		width: 20%;
+		clear: both;
+		position: absolute;
+		right: 82px;
+		top:220px;
+	}
+	.travel_with_auto div{
+		width: 140px;
+		margin-left: calc(50% - 70px);
+		background-size: 100%;
+	}
+	.footer_banners{
+		width: 100%;
+	}
+	.footer_banner_one{
+		margin-left: 50px;
+	}
+	.footer_banner_tree{
+		margin-right: 0;
+	}
+	.footer_banner_four{
+		margin-left: 50px;
+		height: 130px !important;
+	}
+	.links_other{
+		margin-left: 40px;
+	}
+	.copyright{
+		margin-left: 37%;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+		.logo{top:-40px;}
+		.slider{display: none}
+		header{
+			display: none;
+			position: absolute;
+			width: 100%;
+			background-color: rgba(255, 199, 88, 0.98);
+			top:30px;
+			padding-top: 20px;
+			height: 1000px;
+			padding-left: 20px;
+		}
+		.btn{
+			display: none;
+		}
+		.btn_map{
+			display: none;
+		}
+		.search_field{
+			width: 87%;
+		}
+		.search_button{
+			width: 87%;
+			height: 30px;
+			font-size: 20px;
+		}
+		#menu li{
+			width: 87%;
+		}
+		#menu ul{
+			left: 0;
+			width: 100%;
+			top:20px;
+			background-color: rgba(255,255,255,1);
+			z-index: 999999;
+		}
+		#menu ul li{
+			white-space: normal;
+			width: calc(100% - 5px);
+		}
+
+
+		body{
+			background-size: cover;
+		}
+		section{
+			width: 100%;
+		}
+		.news_block>a{
+			font-size: 3em;
+			margin-left: calc(50% - 95px);
+		}
+		.single_new_container{
+			margin-top: 20px;
+		}
+		.news_info{
+			width: 97%;
+			margin-left: 10px;
+		}
+		.news_image{
+			display: none;
+		}
+		.news_info>span{
+			font-size: 1.5em;
+		}
+		.news_info>p{
+			font-size: 1em;
+		}
+		.ad_banners{
+			width: 95%;
+			margin-left: 10px;
+		}
+		.ad_banners div{
+			height: 50px;
+		}
+		article{
+			display: none;
+		}
+		.footer_banner_one{
+			margin-left: 10px;
+		}
+		.footer_banner_tree{
+			margin-top: 20px;
+			margin-left: 20px;
+			margin-right: 0;
+		}
+		.footer_banner_four{
+			float: left;
+			width: 170px!important;
+			padding: 0;
+			margin-left: 20px;
+		}
+		.footer_banner_four div{
+			width: 160px;
+			background-size: contain;
+		}
+		.footer_banner_four_first{
+			width: 160px!important;
+			background-size: cover!important;
+		}
+		.link_similar{
+			margin-left: 40px;
+			margin-bottom: 10px;
+		}
+		.twitter_link{
+			margin-left: 50px;
+		}
+		.copyright{
+			margin-left: 25%;
+		}
+		.menu_button_call{
+			display: block;
+			top:-20px;
+			right: 20px;
+		}
+}
+@media only screen and (max-width: 414px){
+	.footer_banners{
+		display: none;
+	}
+	.link_similar{
+		margin-left: 0px;
+	}
+	.you_tube_link{
+		margin-left: 50px;
+	}
+	.twitter_link{
+		margin-left: 10px;
+	}
+	.blinded_link{
+		margin-left: 50px;
+	}
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.ad_banners{
+		display: none;
+	}
+	.single_new_container{
+		width: 95%;
+	}
+	.links_other{
+		margin: 0 0 10px 0;
+	}
+	.face_book_link{
+		margin-left: 30px;
+	}
+	.you_tube_link{
+		margin-left: 10px;
+	}
+	.twitter_link{
+		margin-left: 120px;
+	}
+	.blinded_link{
+		display: none;
+	}
+	.menu_button_call{
+		right: 10px;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
