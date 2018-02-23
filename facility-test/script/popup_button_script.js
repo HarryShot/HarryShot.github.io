@@ -31,7 +31,7 @@ window.addEventListener('load',init,false);
         modalContent.style.height = "30%";
     }else if($(window).width()<=480){
         modalContent.style.width = "80%";
-        modalContent.style.height = "40%";
+        modalContent.style.height = "70%";
     }
 
 
