@@ -34,8 +34,6 @@ $(function () {
     });
     $(".mini_button_left").click(function () {
         clearInterval(timer);
-
-
         slideContainer.animate({'margin-left':'+='+width},animationSpeed,function () {
             currentSlide--;
             if(currentSlide<1){
@@ -44,8 +42,6 @@ $(function () {
 
             }
         });
-
-
 
        timer = setInterval(change,pause);
         $(".mini_button_left").attr("disabled","disabled");
