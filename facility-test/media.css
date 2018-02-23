@@ -355,14 +355,27 @@
 
     }
 }
-@media only screen and (max-width: 414px){
-
-}
-
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-	
+    header>a>img{
+        height: 55px;
+
+    }
+    header>a>span{
+        margin-left: 20px;
+    }
+    .slider_choose_point>div{
+        margin-top: 10px;
+    }
+    .mini_slider_img{
+        width: 320px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .mini_slider_img .slide{
+        width: 320px;
+    }
 }
 
 
