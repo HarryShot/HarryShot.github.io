@@ -1,5 +1,7 @@
 $(function () {
 
+    alert($(window).width());
+
     var img = new Array();
     img[0] = "image/slider1.jpg";
     img[1] = "image/slider2.jpg";
