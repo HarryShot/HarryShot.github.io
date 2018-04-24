@@ -2,45 +2,109 @@
 <html>
 <head>
 	<title>Links to project</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-	<p>List of project:</p>
-	<ol>
-		<li>
-			<a href="https://harryshot.github.io/burger/">Static page only html and css.</a>
-		</li>
-
-		<li>
-			<a href="https://harryshot.github.io/photographer/">Static page only html and css.</a>
-		</li>
-		<li>
-			<a href="https://harryshot.github.io/drink/">Page have base set of drink and calculate their cost</a> 
-			<ol>
-				<li>
-					<a href="https://github.com/HarryShot/HarryShot.github.io/blob/master/drink/ReadMe.txt">Read me</a>
-				</li>
-			</ol>
-		</li>
-		<li>
-			<a href="https://harryshot.github.io/lib/ ">In this task I use angularJS,,bootstrap3, JavaScript, all data save in localStorage.</a>
-			<ol>
-				<li>
-					<a href="https://github.com/HarryShot/HarryShot.github.io/blob/master/lib/ReadMe.txt">Read me</a>
-				</li>
-			</ol>
-		</li>
-		<li>
-			<a href="https://harryshot.github.io/uz.gov.ua/">Adaptive page with JavaScript and media queries.</a>
-		</li>
-		<li>
-			<a href="https://harryshot.github.io/facility-test/">Adaptive page with JavaScript and media queries.</a>
-		</li>
-	</ol>
-	
-	
-	
-	
-	
-	
+	<header id="head_of_page">
+		<div class="link"><a href="#works">works</a></div>
+		<div id="face"></div>
+		<div class="link"><a href="#contact">contact</a></div>
+	</header>
+	<script src="scripts/page_slide.js"></script>
+	<section id="works_container">
+		<header id="works">
+			<p>works:</p>
+		</header>
+		<article>
+			<div class="work_image"><img src="img/facility.png" alt="Oops, something went wrong"></div>
+			<div class="about_container">
+				<div class="work_about">Adaptive page with JavaScript and media queries. Page have modile version.<br>
+					<img src="img/facility_mobile.png" alt="Oops, something went wrong">
+					<img src="img/facility_tablet.png" alt="Oops, something went wrong">
+				</div>
+				<div class="work_buttons"><a href="https://harryshot.github.io/facility-test/" target="_blank">Go to page</a></div>
+			</div>
+		</article>
+		<article>
+			<div class="work_image"><img src="img/uz_gov.png" alt="Oops, something went wrong"></div>
+			<div class="about_container">
+				<div class="work_about">Adaptive page with JavaScript and media queries. Page have modile version.<br>
+					<img src="img/uz_gov_mobile.png" alt="Oops, something went wrong">
+					<img src="img/uz_gov_tablet.png" alt="Oops, something went wrong">
+				</div>
+				<div class="work_buttons"><a href="https://harryshot.github.io/uz.gov.ua/" target="_blank">Go to page</a></div>
+			</div>
+		</article>
+		<article>
+			<div class="work_image"><img src="img/lib.png" alt="Oops, something went wrong"></div>
+			<div class="about_container">
+				<div class="work_about">In this task I use angularJS,,bootstrap3, JavaScript, all data save in localStorage.</div>
+				<div class="work_buttons"><a href="https://harryshot.github.io/lib/" target="_blank">Go to page</a>
+					<a href="https://github.com/HarryShot/HarryShot.github.io/blob/master/lib/ReadMe.txt" target="_blank">Go to read me</a></div>
+			</div>
+		</article>
+		<article>
+			<div class="work_image"><img src="img/drink.png" alt="Oops, something went wrong"></div>
+			<div class="about_container">
+				<div class="work_about">Page have base set of drink and calculate their cost</div>
+				<div class="work_buttons"><a href="https://harryshot.github.io/drink/" target="_blank">Go to page</a>
+					<a href="https://github.com/HarryShot/HarryShot.github.io/blob/master/drink/ReadMe.txt" target="_blank">Go to read me</a></div>
+			</div>
+		</article>
+		<article>
+			<div class="work_image"><img src="img/burger.png" alt="Oops, something went wrong"></div>
+			<div class="about_container">
+				<div class="work_about">Static page only html and css.</div>
+				<div class="work_buttons"><a href="https://harryshot.github.io/burger/" target="_blank">Go to page</a></div>
+			</div>
+		</article>
+		<article>
+			<div class="work_image"><img src="img/photographer.png" alt="Oops, something went wrong"></div>
+			<div class="about_container">
+				<div class="work_about">Static page only html and css.</div>
+				<div class="work_buttons"><a href="https://harryshot.github.io/photographer/" target="_blank">Go to page</a></div>
+			</div>
+		</article>
+	</section>
+	<section id="contact_container">
+		<header id="contact"><p>contacts:</p></header>
+		<article>
+			<a href="https://drive.google.com/file/d/1DRvw1nlqLN9fDltpqcf-gTitMcbm9uMP/view" target="_blank">
+			<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+			<path d="M18 17H6v-2h12v2zm0-4H6v-2h12v2zm0-4H6V7h12v2zM3 22l1.5-1.5L6 22l1.5-1.5L9 22l1.5-1.5L12 22l1.5-1.5L15 22l1.5-1.5L18 22l1.5-1.5L21 22V2l-1.5 1.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2 7.5 3.5 6 2 4.5 3.5 3 2v20z"/>
+			<path d="M0 0h24v24H0z" fill="none"/>
+		</svg>
+				<span>CV</span>
+			</a>
+		</article>
+		<article>
+			<a href="" target="_blank">
+				<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0 0h24v24H0z" fill="none"/>
+				<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+			</svg>
+			<span>Linkedin</span>
+			</a>
+		</article>
+		<article>
+			<a href="tel:+38(063)2680695">
+				<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0 0h24v24H0z" fill="none"/>
+					<path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+				</svg>
+				<span>Phone: +38 (063) 268 06 95</span>
+			</a>
+		</article>
+		<article>
+			<a href="mailto:h.krestiyaninov@gmail.com">
+				<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+					<path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+					<path d="M0 0h24v24H0z" fill="none"/>
+				</svg>
+				<span>E-Mail: h.krestiyaninov@gmail.com</span>
+			</a>
+		</article>
+	</section>
 </body>
 </html>
