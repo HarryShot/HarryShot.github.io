@@ -1,16 +1,23 @@
-navigator.geolocation.getCurrentPosition(updatePosition);
+var posLat = 50.4506819;
+var posLng = 30.5230936;
 
-function updatePosition(pos) {
-    // задание координат.
-    var position = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
+navigator.geolocation.getCurrentPosition(function(position) {
+    // Текущие координаты.
+    posLat = position.coords.latitude;
+    posLng = position.coords.longitude;
+    initMap();
+});
 
-    // параметры для карты.
-    var options = {
+
+
+function initMap() {
+    var uluru = {lat: posLat, lng: posLng};
+    var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 10,
-        center: position, // позиция на карте
-        mapTypeId: google.maps.MapTypeId.ROADMAP // тип карты - ROADMAP, SATELLITE, HYBRID and TERRAIN
-    };
-
-    // объект карты.
-    var map = new google.maps.Map(document.getElementById("map"), options);
+        center: uluru
+    });
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+    });
 }
