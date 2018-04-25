@@ -123,3 +123,7 @@ body a{
 #contact_container{
     padding-bottom: 50px;
 }
+#contact_container span{
+    position: relative;
+    bottom: 6px;
+}
